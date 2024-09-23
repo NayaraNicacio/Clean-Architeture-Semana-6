@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from 'mongoose';// ES MODULE
 
 const projetSchema = new mongoose.Schema({
     projetid: { type: String, unique: true },
@@ -9,4 +9,4 @@ const projetSchema = new mongoose.Schema({
 
 const Projet = mongoose.model('Projet', projetSchema);
 
-export default Projet;
+export default Projet; // ES MODULE

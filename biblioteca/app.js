@@ -106,4 +106,4 @@ app.route('/users').get(async (req, res) => {
     }
 });
 
-export default app;
+export default app; // ES MODULE

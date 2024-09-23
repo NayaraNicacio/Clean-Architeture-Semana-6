@@ -20,19 +20,13 @@
 
 // DEPOIS ES MODULE
 
-import mongoose from 'mongoose';
-const { MONGO_URI } = process.env;
+import { connect } from 'mongoose';
 
-export const connect = () => {
-    mongoose.connect(MONGO_URI, {
-        
-    })
-    .then(() => {
-        console.log('Conectado com Sucesso!!!');
-    })
-    .catch((error) => {
-        console.log("Erro de Conexão");
-        console.log(error);
-        process.exit(1);
-    });
+export default async () => {
+    try {
+        await connect(process.env.DB_URL, {});
+        console.log("CONNECTED TO DATABASE SUCCESSFULLY");
+    } catch (error) {
+        console.error('COULD NOT CONNECT TO DATABASE:', error.message);
+    }
 };

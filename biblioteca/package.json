@@ -39,5 +39,9 @@
   "bugs": {
     "url": "https://github.com/NayaraNicacio/Clean-Architeture-Semana-6/issues"
   },
-  "homepage": "https://github.com/NayaraNicacio/Clean-Architeture-Semana-6#readme"
+  "homepage": "https://github.com/NayaraNicacio/Clean-Architeture-Semana-6#readme",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {}
 }

@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGO_URI, {
 });
 
 // Configura a porta
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 4000;
 
 // Inicia o servidor
 app.listen(PORT, () => {
