@@ -1,11 +1,12 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose';// ES MODULE
 
-const projetSchema = new mongoose.Schema(
-    {
-    projetid:{type:String, unique:true},
-    projetname:{ type: String},
-    projetedress:{ type: String},
-    projetmedia:{type: String}
+const projetSchema = new mongoose.Schema({
+    projetid: { type: String, unique: true },
+    projetname: { type: String },
+    projetedress: { type: String },
+    projetmedia: { type: String }
 });
 
-module.exports = mongoose.model('projet', projetSchema);
+const Projet = mongoose.model('Projet', projetSchema);
+
+export default Projet; // ES MODULE
