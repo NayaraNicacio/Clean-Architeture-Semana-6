@@ -19,3 +19,16 @@
 // }
 
 // DEPOIS ES MODULE
+
+import { connect } from 'mongoose';
+
+export default async () => {
+    try {
+        await connect(process.env.DB_URL, {});
+        console.log("CONNECTED TO DATABASE SUCCESSFULLY");
+    } catch (error) {
+        console.error('COULD NOT CONNECT TO DATABASE:', error.message);
+    }
+};
+
+// Atualização de codigo de conexão 
