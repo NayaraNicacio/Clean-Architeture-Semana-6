@@ -24,7 +24,7 @@ import { connect } from 'mongoose';
 
 export default async () => {
     try {
-        await connect(process.env.DB_URL, {});
+        await connect(process.env.MONGO_URI, {});
         console.log("CONNECTED TO DATABASE SUCCESSFULLY");
     } catch (error) {
         console.error('COULD NOT CONNECT TO DATABASE:', error.message);

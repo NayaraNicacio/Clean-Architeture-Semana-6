@@ -4,7 +4,7 @@ import express from 'express';
 import jwt from 'jsonwebtoken';
 import User from './model/user.js';
 import Projet from './model/educacao.js';
-import { use } from 'chai';
+
 
 dotenv.config(); // Carregar variáveis de ambiente
 connectDatabase(); // Conectar ao banco de dados
